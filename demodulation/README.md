@@ -1,0 +1,6 @@
+```bash
+bash run.sh
+```
+
+
+
