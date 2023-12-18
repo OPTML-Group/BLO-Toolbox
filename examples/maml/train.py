@@ -1,7 +1,6 @@
 import argparse
 import os
 import random
-from collections import OrderedDict
 
 import yaml
 import torch
@@ -178,8 +177,8 @@ def main(config):
 
     t_epoch = utils.time_str(timer_epoch.end())
     t_elapsed = utils.time_str(timer_elapsed.end())
-    t_estimate = utils.time_str(timer_elapsed.end() / 
-      (epoch - start_epoch + 1) * (config['epoch'] - start_epoch + 1))
+    t_estimate = utils.time_str(timer_elapsed.end() /
+                                (epoch - start_epoch + 1) * (config['epoch'] - start_epoch + 1))
 
     # formats output
     log_str = 'epoch {}, meta-train {:.4f}|{:.4f}'.format(

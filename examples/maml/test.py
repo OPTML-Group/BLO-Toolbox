@@ -27,7 +27,7 @@ def main(config):
   utils.log('meta-test set: {} (x{}), {}'.format(
     dataset[0][0].shape, len(dataset), dataset.n_classes))
   loader = DataLoader(dataset, config['test']['n_episode'],
-    collate_fn=datasets.collate_fn, num_workers=1, pin_memory=True)
+                      collate_fn=datasets.collate_fn, num_workers=1, pin_memory=True)
 
   ##### Model #####
 
@@ -71,8 +71,8 @@ def main(config):
       va_lst.append(acc)
 
     print('test epoch {}: acc={:.2f} +- {:.2f} (%)'.format(
-      epoch, aves_va.item() * 100, 
-      utils.mean_confidence_interval(va_lst) * 100))
+      epoch, aves_va.item() * 100,
+             utils.mean_confidence_interval(va_lst) * 100))
 
 
 if __name__ == '__main__':
