@@ -1,4 +1,8 @@
-# A Toolbox for Bi-level Optimization (BLO)
+# B-Box: A Toolbox for Bi-level Optimization (BLO)
+
+```bash
+pip install bbox
+```
 
 BLO-Toolbox is an extensive [PyTorch](https://pytorch.org)-based toolbox designed to facilitate the exploration and development of bi-level optimization (BLO) applications in machine learning and signal processing. The repository is associated with the tutorial paper, "An Introduction to Bi-level Optimization: Foundations and Applications in Signal Processing and Machine Learning." The toolbox supports a number of **large-scale** applications including adversarial training, model pruning, wireless resource allocation, and invariant representation learning. It contains code, tools, and examples that are built upon state-of-the-art methods.
 
